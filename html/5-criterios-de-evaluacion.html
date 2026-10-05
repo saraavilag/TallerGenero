@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-muufu2zf-87jklh8r0">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.5">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>5. Criterios de Evaluación | Taller de Género</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css">
+<style>
+  /* ============ OCULTAR MODO OSCURO ============ */
+  #darkModeToggler { display: none !important; }
+
+  /* ============ BARRA SUPERIOR (vino) ============ */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 58px;
+    background-color: #52072c !important;
+    z-index: 100;
+  }
+  .toggler {
+    background-color: transparent !important;
+    color: #ffedf6 !important;
+    border: none !important;
+    z-index: 101 !important;
+  }
+
+  /* ============ BOTONES ANTERIOR / SIGUIENTE EN LA BARRA DE ARRIBA ============ */
+  .nav-buttons {
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    left: auto !important;
+    height: 58px !important;
+    width: auto !important;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 20px 0 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 8px !important;
+    z-index: 200 !important;
+    box-sizing: border-box !important;
+  }
+  .nav-button {
+    background-color: #7a0a42 !important;
+    color: #ffedf6 !important;
+    border-radius: 8px !important;
+    padding: 8px 16px !important;
+    font-weight: bold !important;
+    font-size: 0.9rem !important;
+    text-decoration: none !important;
+    border: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    line-height: 1 !important;
+    height: 38px !important;
+    box-sizing: border-box !important;
+  }
+  .nav-button span {
+    color: #ffedf6 !important;
+    font-size: 0.9rem !important;
+  }
+  .nav-button:hover { background-color: #ffedf6 !important; }
+  .nav-button:hover span { color: #52072c !important; }
+
+  /* ============ FONDO GENERAL ============ */
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    padding-top: 60px !important;
+  }
+
+  /* ============ TEXTOS Y ENCABEZADOS ============ */
+  h1, h2, h3, h4, h5, h6,
+  .page-title,
+  .package-title,
+  .box-title {
+    color: #52072c !important;
+  }
+
+  /* ============ ENCABEZADO PRINCIPAL ============ */
+  .main-header {
+    background-color: #52072c !important;
+    border-radius: 12px !important;
+    padding: 15px 20px !important;
+    margin-bottom: 15px !important;
+  }
+  .main-header .page-title,
+  .main-header .package-title { color: #ffffff !important; }
+
+  .package-header,
+  .page-header {
+    box-shadow: none !important;
+    border: none !important;
+  }
+  .main-header .package-header {
+    border-bottom: 2px solid #ffedf6 !important;
+    padding-bottom: 10px !important;
+    margin-bottom: 10px !important;
+  }
+
+  /* ============ BREADCRUMB (sin ícono azul) ============ */
+  .breadcrumb,
+  .exe-breadcrumb,
+  [class*="breadcrumb"],
+  nav[aria-label="breadcrumb"] {
+    background-color: #ffedf6 !important;
+    color: #52072c !important;
+    border-radius: 12px !important;
+    padding: 10px 15px !important;
+    margin: 10px 0 !important;
+    border: none !important;
+  }
+  .breadcrumb *,
+  .exe-breadcrumb *,
+  [class*="breadcrumb"] *,
+  nav[aria-label="breadcrumb"] * {
+    color: #52072c !important;
+    background: transparent !important;
+  }
+  .breadcrumb svg,
+  .breadcrumb img,
+  .breadcrumb i,
+  [class*="breadcrumb"] svg,
+  [class*="breadcrumb"] img,
+  [class*="breadcrumb"] i,
+  nav[aria-label="breadcrumb"] svg,
+  nav[aria-label="breadcrumb"] img {
+    display: none !important;
+  }
+
+  /* ============ MENÚ LATERAL ============ */
+  #siteNav {
+    background-color: #ffedf6 !important;
+    border-radius: 12px !important;
+    padding: 12px !important;
+  }
+  #siteNav ul { list-style: none !important; padding: 0 !important; margin: 0 !important; }
+  #siteNav li { margin-bottom: 6px !important; }
+  #siteNav a {
+    color: #52072c !important;
+    border-radius: 10px !important;
+    padding: 10px 14px !important;
+    display: block !important;
+    text-decoration: none !important;
+    transition: background .2s !important;
+  }
+  #siteNav a:hover { background-color: #ffffff !important; }
+  #siteNav li.active a {
+    background-color: #52072c !important;
+    color: #ffedf6 !important;
+    font-weight: bold !important;
+  }
+
+  /* ============ TARJETAS DE CONTENIDO ============ */
+  .box {
+    border-radius: 14px !important;
+    border: 1px solid #ffedf6 !important;
+    overflow: hidden !important;
+    margin-bottom: 20px !important;
+    background-color: #ffffff !important;
+  }
+  .box-head {
+    background-color: #ffedf6 !important;
+    border-radius: 14px 14px 0 0 !important;
+    padding: 12px 18px !important;
+  }
+  .box-content {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    padding: 18px !important;
+  }
+
+  /* ============ PIE DE PÁGINA ============ */
+  #siteFooter {
+    background-color: #ffedf6 !important;
+    border-radius: 12px !important;
+    padding: 12px 18px !important;
+    margin-top: 25px !important;
+  }
+  #siteFooter a,
+  #siteFooter p,
+  #siteFooter span { color: #52072c !important; }
+</style>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-muufu2zf-87jklh8r0" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node no-ch">Bienvenida</a>
+</li>
+<li> <a href="../html/1-calendario.html" class="no-ch">1. Calendario</a>
+</li>
+<li> <a href="../html/2-objetivo.html" class="no-ch">2. Objetivo</a>
+</li>
+<li> <a href="../html/3-temario.html" class="no-ch">3. Temario</a>
+</li>
+<li> <a href="../html/4-material-de-consulta.html" class="no-ch">4. Material de Consulta</a>
+</li>
+<li class="active"> <a href="../html/5-criterios-de-evaluacion.html" class="active no-ch">5. Criterios de Evaluación</a>
+</li>
+<li> <a href="../html/6-creditos.html" class="no-ch">6. Créditos</a>
+</li>
+</ul>
+</nav><main id="page-muufu2zf-87jklh8r0" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Taller de Género</p></div>
+<div class="page-header"><h1 class="page-title">5. Criterios de Evaluación</h1></div>
+</header><div id="page-content-page-muufu2zf-87jklh8r0" class="page-content">
+<article id="block-muuj3jx5-bdwvupk25" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<span class="exe-material-icon" style="--exe-material-icon-url:url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2248%22%20height%3D%2248%22%20viewBox%3D%220%20-960%20960%20960%22%3E%3Cpath%20d%3D%22M480.27-80q-82.74%200-155.5-31.5Q252-143%20197.5-197.5t-86-127.5Q80-398%2080-480q0-83%2031.5-155.5T197-763q54-55%20126-86.5T475.56-881q19.44%200%2038.44%201.5%2019%201.5%2038%205.5-6%2040%206.5%2078.5t39%2068q26.5%2029.5%2066.5%2045t89%209.5q-7%2063%2022%20109t104%2053q1%209%201%2018v17q0%2081.38-31.5%20153.34Q817-250.71%20763-196.62t-127%2085.36Q563-80%20480.27-80Zm-60.15-478Q446-558%20464-576.12q18-18.12%2018-44T463.88-664q-18.12-18-44-18T376-663.88q-18%2018.12-18%2044T376.12-576q18.12%2018%2044%2018Zm-80%20200Q366-358%20384-376.12q18-18.12%2018-44T383.88-464q-18.12-18-44-18T296-463.88q-18%2018.12-18%2044T296.12-376q18.12%2018%2044%2018ZM600-320q17%200%2028.5-11.5T640-360q0-17-11.5-28.5T600-400q-17%200-28.5%2011.5T560-360q0%2017%2011.5%2028.5T600-320Z%22%2F%3E%3C%2Fsvg%3E');" aria-hidden="true"></span>
+</div>
+<h1 class="box-title">Porcentajes a Considerar</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1791161143960-qx9lisom6" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1791161143960-qx9lisom6&quot;}">
+<div class="exe-text-template">
+    <table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; font-size: 14px;">
+<thead>
+<tr>
+<th style="background-color: #52072c; color: #ffffff; padding: 12px; text-align: left;"><span style="font-family: tahoma, arial, helvetica, sans-serif;">Criterio </span></th>
+<th style="background-color: #52072c; color: #ffffff; padding: 12px; text-align: center; width: 20%;"><span style="font-family: tahoma, arial, helvetica, sans-serif;">Porcentaje</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border: 1px solid #ffedf6; padding: 12px; color: #000000;"><span style="font-family: tahoma, arial, helvetica, sans-serif;">Actividades integradoras</span></td>
+<td style="border: 1px solid #ffedf6; padding: 12px; text-align: center; font-weight: bold; color: #52072c;"><span style="font-family: tahoma, arial, helvetica, sans-serif;">30%</span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #ffedf6; padding: 12px; color: #000000;"><span style="font-family: tahoma, arial, helvetica, sans-serif;">Trabajo Final</span></td>
+<td style="border: 1px solid #ffedf6; padding: 12px; text-align: center; font-weight: bold; color: #52072c;"><span style="font-family: tahoma, arial, helvetica, sans-serif;">40%</span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #ffedf6; padding: 12px; color: #000000;"><span style="font-family: tahoma, arial, helvetica, sans-serif;">Asistencia y participación en clase (sincrónica y asincrónicamente)</span></td>
+<td style="border: 1px solid #ffedf6; padding: 12px; text-align: center; font-weight: bold; color: #52072c;"><span style="font-family: tahoma, arial, helvetica, sans-serif;">30%</span></td>
+</tr>
+<tr>
+<td style="background-color: #ffedf6; padding: 12px; font-weight: bold; color: #52072c; text-align: right;"><span style="font-family: tahoma, arial, helvetica, sans-serif;">Total</span></td>
+<td style="background-color: #ffedf6; padding: 12px; text-align: center; font-weight: bold; color: #52072c;"><span style="font-family: tahoma, arial, helvetica, sans-serif;">100%</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/4-material-de-consulta.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/6-creditos.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+</body>
+</html>

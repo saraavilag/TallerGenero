@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-muuftugy-oxy13uce6">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.5">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>4. Material de Consulta | Taller de Género</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css">
+<style>
+  /* ============ OCULTAR MODO OSCURO ============ */
+  #darkModeToggler { display: none !important; }
+
+  /* ============ BARRA SUPERIOR (vino) ============ */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 58px;
+    background-color: #52072c !important;
+    z-index: 100;
+  }
+  .toggler {
+    background-color: transparent !important;
+    color: #ffedf6 !important;
+    border: none !important;
+    z-index: 101 !important;
+  }
+
+  /* ============ BOTONES ANTERIOR / SIGUIENTE EN LA BARRA DE ARRIBA ============ */
+  .nav-buttons {
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    left: auto !important;
+    height: 58px !important;
+    width: auto !important;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 20px 0 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 8px !important;
+    z-index: 200 !important;
+    box-sizing: border-box !important;
+  }
+  .nav-button {
+    background-color: #7a0a42 !important;
+    color: #ffedf6 !important;
+    border-radius: 8px !important;
+    padding: 8px 16px !important;
+    font-weight: bold !important;
+    font-size: 0.9rem !important;
+    text-decoration: none !important;
+    border: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    line-height: 1 !important;
+    height: 38px !important;
+    box-sizing: border-box !important;
+  }
+  .nav-button span {
+    color: #ffedf6 !important;
+    font-size: 0.9rem !important;
+  }
+  .nav-button:hover { background-color: #ffedf6 !important; }
+  .nav-button:hover span { color: #52072c !important; }
+
+  /* ============ FONDO GENERAL ============ */
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    padding-top: 60px !important;
+  }
+
+  /* ============ TEXTOS Y ENCABEZADOS ============ */
+  h1, h2, h3, h4, h5, h6,
+  .page-title,
+  .package-title,
+  .box-title {
+    color: #52072c !important;
+  }
+
+  /* ============ ENCABEZADO PRINCIPAL ============ */
+  .main-header {
+    background-color: #52072c !important;
+    border-radius: 12px !important;
+    padding: 15px 20px !important;
+    margin-bottom: 15px !important;
+  }
+  .main-header .page-title,
+  .main-header .package-title { color: #ffffff !important; }
+
+  .package-header,
+  .page-header {
+    box-shadow: none !important;
+    border: none !important;
+  }
+  .main-header .package-header {
+    border-bottom: 2px solid #ffedf6 !important;
+    padding-bottom: 10px !important;
+    margin-bottom: 10px !important;
+  }
+
+  /* ============ BREADCRUMB (sin ícono azul) ============ */
+  .breadcrumb,
+  .exe-breadcrumb,
+  [class*="breadcrumb"],
+  nav[aria-label="breadcrumb"] {
+    background-color: #ffedf6 !important;
+    color: #52072c !important;
+    border-radius: 12px !important;
+    padding: 10px 15px !important;
+    margin: 10px 0 !important;
+    border: none !important;
+  }
+  .breadcrumb *,
+  .exe-breadcrumb *,
+  [class*="breadcrumb"] *,
+  nav[aria-label="breadcrumb"] * {
+    color: #52072c !important;
+    background: transparent !important;
+  }
+  .breadcrumb svg,
+  .breadcrumb img,
+  .breadcrumb i,
+  [class*="breadcrumb"] svg,
+  [class*="breadcrumb"] img,
+  [class*="breadcrumb"] i,
+  nav[aria-label="breadcrumb"] svg,
+  nav[aria-label="breadcrumb"] img {
+    display: none !important;
+  }
+
+  /* ============ MENÚ LATERAL ============ */
+  #siteNav {
+    background-color: #ffedf6 !important;
+    border-radius: 12px !important;
+    padding: 12px !important;
+  }
+  #siteNav ul { list-style: none !important; padding: 0 !important; margin: 0 !important; }
+  #siteNav li { margin-bottom: 6px !important; }
+  #siteNav a {
+    color: #52072c !important;
+    border-radius: 10px !important;
+    padding: 10px 14px !important;
+    display: block !important;
+    text-decoration: none !important;
+    transition: background .2s !important;
+  }
+  #siteNav a:hover { background-color: #ffffff !important; }
+  #siteNav li.active a {
+    background-color: #52072c !important;
+    color: #ffedf6 !important;
+    font-weight: bold !important;
+  }
+
+  /* ============ TARJETAS DE CONTENIDO ============ */
+  .box {
+    border-radius: 14px !important;
+    border: 1px solid #ffedf6 !important;
+    overflow: hidden !important;
+    margin-bottom: 20px !important;
+    background-color: #ffffff !important;
+  }
+  .box-head {
+    background-color: #ffedf6 !important;
+    border-radius: 14px 14px 0 0 !important;
+    padding: 12px 18px !important;
+  }
+  .box-content {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    padding: 18px !important;
+  }
+
+  /* ============ PIE DE PÁGINA ============ */
+  #siteFooter {
+    background-color: #ffedf6 !important;
+    border-radius: 12px !important;
+    padding: 12px 18px !important;
+    margin-top: 25px !important;
+  }
+  #siteFooter a,
+  #siteFooter p,
+  #siteFooter span { color: #52072c !important; }
+</style>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-muuftugy-oxy13uce6" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node no-ch">Bienvenida</a>
+</li>
+<li> <a href="../html/1-calendario.html" class="no-ch">1. Calendario</a>
+</li>
+<li> <a href="../html/2-objetivo.html" class="no-ch">2. Objetivo</a>
+</li>
+<li> <a href="../html/3-temario.html" class="no-ch">3. Temario</a>
+</li>
+<li class="active"> <a href="../html/4-material-de-consulta.html" class="active no-ch">4. Material de Consulta</a>
+</li>
+<li> <a href="../html/5-criterios-de-evaluacion.html" class="no-ch">5. Criterios de Evaluación</a>
+</li>
+<li> <a href="../html/6-creditos.html" class="no-ch">6. Créditos</a>
+</li>
+</ul>
+</nav><main id="page-muuftugy-oxy13uce6" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Taller de Género</p></div>
+<div class="page-header"><h1 class="page-title">4. Material de Consulta</h1></div>
+</header><div id="page-content-page-muuftugy-oxy13uce6" class="page-content">
+<article id="block-muuj0fze-b5i96nunb" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<span class="exe-material-icon" style="--exe-material-icon-url:url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2248%22%20height%3D%2248%22%20viewBox%3D%220%20-960%20960%20960%22%3E%3Cpath%20d%3D%22M240-80q-50%200-85-35t-35-85v-560q0-50%2035-85t85-35h420v620H240q-25.5%200-42.75%2017.25T180-200q0%2025.5%2017.25%2042.75T240-140h540v-660h60v720H240Zm20-340h49l25-71h113l25%2071h49L415.32-700H365L260-420Zm88-112%2041.49-116h2.02L433-532h-85Z%22%2F%3E%3C%2Fsvg%3E');" aria-hidden="true"></span>
+</div>
+<h1 class="box-title">Blibliografía</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1791160998889-s6zyhnd55" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1791160998889-s6zyhnd55&quot;}">
+<div class="exe-text-template">
+    <h2><span style="color: #701340; font-family: tahoma, arial, helvetica, sans-serif;"><strong>Para profundizar en los contenidos abordados en este espacio de aprendizaje puedes consultar los siguientes recursos:</strong></span></h2>
+<ul>
+<li><span style="font-family: tahoma, arial, helvetica, sans-serif;">Ariza, M. &amp; De Oliveira, O. (2000) “Género, trabajo y familia: consideraciones teórico metodológicas”. En CONAPO, La población en México. Situación actual y desafíos futuros. México; CONAPO.</span></li>
+<li><span style="font-family: tahoma, arial, helvetica, sans-serif;">Beltrán, P. (2008) Miradas sobre la igualdad de Género, Redalyc, México.</span></li>
+<li><span style="font-family: tahoma, arial, helvetica, sans-serif;">Blazquez, N.; Flores, F. &amp; Ríos, M. (2010). Investigación Feminista. Epistemología, Metodología y Representaciones Sociales. México: UNAM – CEIICH.</span><br /><span style="font-family: tahoma, arial, helvetica, sans-serif;">Butler, Judith. (2006). Deshacer el género. España: Paidós.</span></li>
+<li><span style="font-family: tahoma, arial, helvetica, sans-serif;">Butler Judith (2002), Cuerpos que importan: Sobre los límites materiales y discursivos del “sexo”. Argentina: Paidós.</span></li>
+<li><span style="font-family: tahoma, arial, helvetica, sans-serif;">Butler Judith (2001), El género en disputa. El feminismo y la subversión de la identidad. México: Paidós.</span></li>
+<li><span style="font-family: tahoma, arial, helvetica, sans-serif;">Campilo, N. (1993). “Feminismo y teoría crítica de la sociedad”. En N. Campillo y E. Barberá (Coords.), Reflexión multidisciplinar sobre la discriminación sexual, Valencia: NAU llibres.</span></li>
+<li><span style="font-family: tahoma, arial, helvetica, sans-serif;">Chávez, J. (2004). Perspectiva de Género. México: ENTS – UNAM Plaza y Valdés.</span></li>
+<li><span style="font-family: tahoma, arial, helvetica, sans-serif;">Chávez, J. (2015). Percepción de la igualdad de género en jóvenes universitarios. Grupo de investigación Centro de Estudios de la Mujer. Revista Trabajo Social No. 10 Igualdad de género.</span></li>
+<li><span style="font-family: tahoma, arial, helvetica, sans-serif;">De Miguel, A. (2011). Los feminismos a través de la historia. Demófilo.</span></li>
+<li><span style="font-family: tahoma, arial, helvetica, sans-serif;">Galeana, P. (2017). La historia del feminismo en México. En G. Esquivel, F. Ibarra y P. Salazar (Coords.), Cien ensayos para el centenario (T.1, pp. 101-119). Instituto de Investigaciones Jurídicas UNAM.</span></li>
+<li><span style="font-family: tahoma, arial, helvetica, sans-serif;">Scott, J. W. (1996). El género: una categoría útil para el análisis histórico. En Marta Lamas (compiladora), El género: la construcción cultural de la diferencia sexual. México: PUEG-UNAM.</span></li>
+<li><span style="font-family: tahoma, arial, helvetica, sans-serif;">Scott, J. W. (2008). Género e Historia, México: FCE- UACM</span></li>
+<li><span style="font-family: tahoma, arial, helvetica, sans-serif;">Segato, R. L. (2003). Las estructuras elementales de la violencia, ensayos sobre género entre la antropología, el psicoanálisis y los derechos humanos. Bernal: Universidad Nacional de Quilmes.</span></li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/3-temario.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/5-criterios-de-evaluacion.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+</body>
+</html>

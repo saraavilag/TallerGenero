@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-index">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.5">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>Taller de Género</title>
+<link rel="icon" type="image/x-icon" href="libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="libs/jquery/jquery.min.js"> </script><script src="libs/common_i18n.js"> </script><script src="libs/common.js"> </script><script src="libs/exe_export.js"> </script><script src="libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+<script src="idevices/text/text.js"></script><link rel="stylesheet" href="idevices/text/text.css">
+<link rel="stylesheet" href="content/css/base.css"><script src="theme/style.js"> </script><link rel="stylesheet" href="theme/style.css">
+<style>
+  /* ============ OCULTAR MODO OSCURO ============ */
+  #darkModeToggler { display: none !important; }
+
+  /* ============ BARRA SUPERIOR (vino) ============ */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 58px;
+    background-color: #52072c !important;
+    z-index: 100;
+  }
+  .toggler {
+    background-color: transparent !important;
+    color: #ffedf6 !important;
+    border: none !important;
+    z-index: 101 !important;
+  }
+
+  /* ============ BOTONES ANTERIOR / SIGUIENTE EN LA BARRA DE ARRIBA ============ */
+  .nav-buttons {
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    left: auto !important;
+    height: 58px !important;
+    width: auto !important;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 20px 0 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 8px !important;
+    z-index: 200 !important;
+    box-sizing: border-box !important;
+  }
+  .nav-button {
+    background-color: #7a0a42 !important;
+    color: #ffedf6 !important;
+    border-radius: 8px !important;
+    padding: 8px 16px !important;
+    font-weight: bold !important;
+    font-size: 0.9rem !important;
+    text-decoration: none !important;
+    border: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    line-height: 1 !important;
+    height: 38px !important;
+    box-sizing: border-box !important;
+  }
+  .nav-button span {
+    color: #ffedf6 !important;
+    font-size: 0.9rem !important;
+  }
+  .nav-button:hover { background-color: #ffedf6 !important; }
+  .nav-button:hover span { color: #52072c !important; }
+
+  /* ============ FONDO GENERAL ============ */
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    padding-top: 60px !important;
+  }
+
+  /* ============ TEXTOS Y ENCABEZADOS ============ */
+  h1, h2, h3, h4, h5, h6,
+  .page-title,
+  .package-title,
+  .box-title {
+    color: #52072c !important;
+  }
+
+  /* ============ ENCABEZADO PRINCIPAL ============ */
+  .main-header {
+    background-color: #52072c !important;
+    border-radius: 12px !important;
+    padding: 15px 20px !important;
+    margin-bottom: 15px !important;
+  }
+  .main-header .page-title,
+  .main-header .package-title { color: #ffffff !important; }
+
+  .package-header,
+  .page-header {
+    box-shadow: none !important;
+    border: none !important;
+  }
+  .main-header .package-header {
+    border-bottom: 2px solid #ffedf6 !important;
+    padding-bottom: 10px !important;
+    margin-bottom: 10px !important;
+  }
+
+  /* ============ BREADCRUMB (sin ícono azul) ============ */
+  .breadcrumb,
+  .exe-breadcrumb,
+  [class*="breadcrumb"],
+  nav[aria-label="breadcrumb"] {
+    background-color: #ffedf6 !important;
+    color: #52072c !important;
+    border-radius: 12px !important;
+    padding: 10px 15px !important;
+    margin: 10px 0 !important;
+    border: none !important;
+  }
+  .breadcrumb *,
+  .exe-breadcrumb *,
+  [class*="breadcrumb"] *,
+  nav[aria-label="breadcrumb"] * {
+    color: #52072c !important;
+    background: transparent !important;
+  }
+  .breadcrumb svg,
+  .breadcrumb img,
+  .breadcrumb i,
+  [class*="breadcrumb"] svg,
+  [class*="breadcrumb"] img,
+  [class*="breadcrumb"] i,
+  nav[aria-label="breadcrumb"] svg,
+  nav[aria-label="breadcrumb"] img {
+    display: none !important;
+  }
+
+  /* ============ MENÚ LATERAL ============ */
+  #siteNav {
+    background-color: #ffedf6 !important;
+    border-radius: 12px !important;
+    padding: 12px !important;
+  }
+  #siteNav ul { list-style: none !important; padding: 0 !important; margin: 0 !important; }
+  #siteNav li { margin-bottom: 6px !important; }
+  #siteNav a {
+    color: #52072c !important;
+    border-radius: 10px !important;
+    padding: 10px 14px !important;
+    display: block !important;
+    text-decoration: none !important;
+    transition: background .2s !important;
+  }
+  #siteNav a:hover { background-color: #ffffff !important; }
+  #siteNav li.active a {
+    background-color: #52072c !important;
+    color: #ffedf6 !important;
+    font-weight: bold !important;
+  }
+
+  /* ============ TARJETAS DE CONTENIDO ============ */
+  .box {
+    border-radius: 14px !important;
+    border: 1px solid #ffedf6 !important;
+    overflow: hidden !important;
+    margin-bottom: 20px !important;
+    background-color: #ffffff !important;
+  }
+  .box-head {
+    background-color: #ffedf6 !important;
+    border-radius: 14px 14px 0 0 !important;
+    padding: 12px 18px !important;
+  }
+  .box-content {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    padding: 18px !important;
+  }
+
+  /* ============ PIE DE PÁGINA ============ */
+  #siteFooter {
+    background-color: #ffedf6 !important;
+    border-radius: 12px !important;
+    padding: 12px 18px !important;
+    margin-top: 25px !important;
+  }
+  #siteFooter a,
+  #siteFooter p,
+  #siteFooter span { color: #52072c !important; }
+</style>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#6bdaa609-d64e-4c68-8c0c-2ac080aee1ed" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="active"> <a href="index.html" class="active main-node no-ch">Bienvenida</a>
+</li>
+<li> <a href="html/1-calendario.html" class="no-ch">1. Calendario</a>
+</li>
+<li> <a href="html/2-objetivo.html" class="no-ch">2. Objetivo</a>
+</li>
+<li> <a href="html/3-temario.html" class="no-ch">3. Temario</a>
+</li>
+<li> <a href="html/4-material-de-consulta.html" class="no-ch">4. Material de Consulta</a>
+</li>
+<li> <a href="html/5-criterios-de-evaluacion.html" class="no-ch">5. Criterios de Evaluación</a>
+</li>
+<li> <a href="html/6-creditos.html" class="no-ch">6. Créditos</a>
+</li>
+</ul>
+</nav><main id="6bdaa609-d64e-4c68-8c0c-2ac080aee1ed" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Taller de Género</p></div>
+<div class="page-header"><h1 class="page-title">Bienvenida</h1></div>
+</header><div id="page-content-6bdaa609-d64e-4c68-8c0c-2ac080aee1ed" class="page-content">
+<article id="block-muuf5pdo-ql330sjo9" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<span class="exe-material-icon" style="--exe-material-icon-url:url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2248%22%20height%3D%2248%22%20viewBox%3D%220%20-960%20960%20960%22%3E%3Cpath%20d%3D%22M479.78-350q58.22%200%20103.72-35t60.5-92l-63%201q-14%2030-41.19%2048-27.18%2018-59.81%2018-32.62%200-59.81-18Q393-446%20379-476h-63q15%2056%2060.28%2091t103.5%2035ZM370.14-550q16.86%200%2028.36-11.64t11.5-28.5q0-16.86-11.64-28.36t-28.5-11.5q-16.86%200-28.36%2011.64t-11.5%2028.5q0%2016.86%2011.64%2028.36t28.5%2011.5Zm220%200q16.86%200%2028.36-11.64t11.5-28.5q0-16.86-11.64-28.36t-28.5-11.5q-16.86%200-28.36%2011.64t-11.5%2028.5q0%2016.86%2011.64%2028.36t28.5%2011.5ZM480-121l-41-36q-106-94-175.5-163.5T153-444.5q-41-54.5-57-99T80-633q0-88.45%2060.5-147.72Q201-840%20290-840q57%200%20105.5%2027t84.5%2078q42-54%2089-79.5T670-840q89%200%20149.5%2059.28Q880-721.45%20880-633q0%2045-16%2089.5t-57%2099q-41%2054.5-110%20124T521-157l-41%2036Z%22%2F%3E%3C%2Fsvg%3E');" aria-hidden="true"></span>
+</div>
+<h1 class="box-title">Presentación</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1791154525883-k33ntx2ed" class="idevice_node text" data-idevice-path="idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1791154525883-k33ntx2ed&quot;}">
+<div class="exe-text-template">
+    <h2><span style="font-family: tahoma, arial, helvetica, sans-serif; color: #52072c;"><strong>Apreciables alumnas y alumnos:</strong></span></h2>
+<p><span style="font-family: tahoma, arial, helvetica, sans-serif;">Les doy la más cordial bienvenida. Me da mucho gusto que formen parte del taller de Género.</span></p>
+<p><span style="font-family: tahoma, arial, helvetica, sans-serif;">La materia de género tiene como objetivo comprender los elementos generales de la teoría feminista y sus categorías de análisis, tomando la perspectiva de género como eje para estudiar la realidad social contemporánea.</span></p>
+<p><span style="font-family: tahoma, arial, helvetica, sans-serif;">Durante el semestre veremos estos temas:</span></p>
+<ul>
+<li><span style="font-family: tahoma, arial, helvetica, sans-serif;">Unidad 1. <span style="color: #52072c;"><strong>Movimiento Feminista</strong></span>: identificarán el proceso histórico del movimiento feminista a nivel mundial y nacional, así como la construcción teórica y científica de la teoría feminista.</span><br /></li>
+<li><span style="font-family: tahoma, arial, helvetica, sans-serif;">Unidad 2. <span style="color: #52072c;"><strong>Teoría feminista y género</strong></span>: distinguirán los diversos enfoques de la teoría feminista desde una perspectiva crítica.</span></li>
+<li><span style="font-family: tahoma, arial, helvetica, sans-serif;">Unidad 3. <span style="color: #52072c;"><strong>Las categorías de la teoría feminista</strong></span>: identificarán las categorías de análisis de la teoría feminista.</span><br /></li>
+<li><span style="font-family: tahoma, arial, helvetica, sans-serif;">Unidad 4. <span style="color: #52072c;"><strong>Género y cultura</strong></span>: identificarán la relación entre el proceso de socialización de género, las instituciones sociales y la cultura en el orden patriarcal.</span><br /></li>
+<li><span style="font-family: tahoma, arial, helvetica, sans-serif;">Unidad 5. <span style="color: #52072c;"><strong>Investigación y metodología con perspectiva de género</strong></span>: distinguirán y aplicarán la metodología de investigación con perspectiva de género.</span></li>
+</ul>
+<p><span style="font-family: tahoma, arial, helvetica, sans-serif;">Durante este tiempo, su compromiso será participar de manera activa y enviar todas las actividades programadas de cada unidad. Yo estaré acompañándoles para resolver dudas académicas y cualquier situación que pueda retrasar el estudio del curso.</span></p>
+<p><span style="font-family: tahoma, arial, helvetica, sans-serif;">Les recomiendo revisar el panorama general de la asignatura en la plataforma, para que puedan planear cada unidad y cumplir con los tiempos, pero sobre todo con los entregables según las indicaciones.</span></p>
+<p><span style="font-family: tahoma, arial, helvetica, sans-serif;">Recuerden revisar todos los contenidos de cada unidad, porque son los que les permitirán resolver las actividades y evidencias de aprendizaje.</span></p>
+<p><span style="font-family: tahoma, arial, helvetica, sans-serif;">¡Que tengan un excelente inicio de curso!</span></p>
+</div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<span class="nav-button nav-button-left" aria-hidden="true"><span>Anterior</span></span>
+<a href="html/1-calendario.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+</body>
+</html>
